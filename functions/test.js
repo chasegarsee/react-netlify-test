@@ -9,7 +9,6 @@ exports.handler = function(event, context, callback) {
     data: { message: parsedBody.message }
   })
     .then(res => {
-      console.log(res);
       callback(null, {
         statusCode: 200,
         body: "Dope, it's working!"
