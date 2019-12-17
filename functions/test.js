@@ -6,7 +6,7 @@ exports.handler = function(event, context, callback) {
   axios({
     method: "post",
     url: "https://en5vtkg3kj7ms.x.pipedream.net",
-    data: { name: parsedBody.name }
+    data: { message: parsedBody.message }
   })
     .then(res => {
       console.log(res);
