@@ -1,2 +1,5 @@
 [build]
+    command = "npm run build"
+    publish="my=app/build"
+    base = "my-app"
     functions = "lambda"
